@@ -1,38 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador de texto - Alura</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-
+        <img class="logo" src="image/Logo.png">
+        <h1 class="titulo-principal">Encriptador de texto</h1>
     </header>
-    
-    <body>
-        <!--Tarjeta del texto del usuario-->
-        <div>
-            <input class="text-here" type="text" placeholder="Ingrese el texto aqui">
-        </div>
 
-        <!--Targeta del texto encriptado-->
-        <div class="container-texto-encriptado">
-            <img src="/Muñeco.svg">
-            <p class="not-found">Ningún mensaje fue encontrado</p>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-        </div>
+    <main>
+            <!--Tarjeta del texto del usuario-->
+            <section class="mensaje-usuario">
+                <div class="container-texto-usuario">
+                    <textarea class="text-here" rows="20" cols="50" id="ingrese-texto" type="text" placeholder="INGRESE SU TEXTO AQUÍ"></textarea>
+                    <span class="error-message" id="mensaje-invalido">El texto introducido no es válido</span>
+                </div>
+            </section>
 
-        <!--Botones (encriptar - desencriptar)-->
-        <div>
-            <p class="alerta">Solo letras minúsculas y sin acentos.</p>
-            <button class="encriptar">Encriptar</button>
-            <button class="desencriptar">Desencriptar</button>
-        </div>
+            <!--Targeta del texto encriptado-->
+        <section class="seccion-texto-encriptado">
+            <div class="container-texto-encriptado">
+                <img class="imagen-muñeco" src="image/Muñeco.png">
+                <p class="not-found">Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </section>
 
-    </body>
+                <!--Botones (encriptar - desencriptar)-->
 
-    <script src="/app.js"></script>
+        <section class="seccion-botones-encriptado">
+            <div class="botones">
+                <button class="encriptar">Encriptar</button>
+                <button class="desencriptar">Desencriptar</button>
+            </div>
+            
+            <div class="texto-alerta">
+                <p class="alerta">&#9888;Solo letras minúsculas y sin acentos.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+    <script src="app.js"></script>
 </body>
 </html>
