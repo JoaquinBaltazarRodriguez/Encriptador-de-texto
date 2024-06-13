@@ -1,289 +1,101 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@300;400;500&display=swap');
+
+body{
+    background-color: #f3f5fc;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
-body {
-    background-color: rgb(226, 227, 230);
-    width: 100%;
-    font-family: cursive;
-}
 
-/* Header section */
-
-header {
-    display: flex;
-    align-items: center;
-    height: 7em;
-}
-
-.logo {
-    height: 60px;
-    margin-left: 2em; 
-}
-
-.titulo-principal {
-    width: 65%;
-    font-size: 42px;
-    text-align: center;
-    margin-top: 1em;
-}
-
-/* End header section */
-
-main {
-    width: 100%;
-    margin-top: 3em;
-}
-
-/* text target section */
-
-.seccion-texto-encriptado {
-    background-color: #FFFFFF;
-    width: 27%;
-    height: 700px;
-    border-radius: 32px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 6em 0 0;
-}
-
-.seccion-texto-encriptado p {
-    margin-top: 1em;
-}
-
-.imagen-muñeco {
-    margin: 0 0 4em 0;
-}
-
-/* End text target section */
-
-
-/* Usser text target section */
-
-.mensaje-usuario {
-    width: 65%;
-    height: 550px;
-    display: inline-block;
-}
-
-.container-texto-usuario {
-    height: 100%;
-    padding: 7em;
-}
-
-.text-here {
-    background: transparent;
+input{
     border: none;
-    resize: none;
-    width: 50%;
-    height: 70%;
-    font-size: 24px;
+    background-color:#f3f5fc ;
+    color: #0a3871;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 35%;
+
 }
 
-.text-here:focus {
-    outline: none;
+.col-70{
+    
+    width: 75%;
+    padding: 3em;
+    flex-direction: column;
 }
-
-.error-message {
-    display: none;
-}
-
-/* End usser text target section */
-
-/* Seccion botones de encriptado */
-
-.seccion-botones-encriptado {
-    width: 65%;
-    height: 150px;
+.col-30{
     display: flex;
+    flex-direction: column;
+    width: 25%;
     align-items: center;
     justify-content: center;
-}
-
-
-.texto-alerta {
-    width: 30%;
-}
-
-.alerta {
-    font-size: 20px;
-}
-
-.botones {
+    background-color:#fff;
+    border-radius: 15px;
+    padding: 2em;
     text-align: center;
-    width: 60%;
-}
-
-.encriptar {
-    background-color: rgb(207, 207, 207);
-    width: 280px;
-    height: 75px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.encriptar:hover {
-    transform: scale(1.1);
-    transition: 0.6s;
-}
-
-
-.desencriptar {
-    background-color: rgb(207, 207, 207);
-    width: 280px;
-    height: 75px;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-left: 4em;
-}
-
-.desencriptar:hover {
-    transform: scale(1.1);
-    transition: 0.6s;
-}
-
-@media screen  and (min-width:1300px) and (max-width:1540px) {
-    .seccion-texto-encriptado {
-        background-color: #FFFFFF;
-        width: 27%;
-        height: 550px;
-        border-radius: 32px;
-        float: right;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0 2em 0 0;
-    }
     
-    .seccion-texto-encriptado p {
-        width: 95%;
-        margin-bottom: 1em;
-    }
-    
-    .mensaje-usuario {
-        width: 68%;
-        height: 450px;
-    }
-
-    .seccion-botones-encriptado {
-        width: 68%;
-        height: 100px;
-    }
-
-    .texto-alerta {
-        width: 35%;
-        margin-left: 1em;
-    }
-
-    .desencriptar {
-        background-color: rgb(207, 207, 207);
-        width: 280px;
-        height: 75px;
-        border-radius: 15px;
-        cursor: pointer;
-        margin-left: 2em;
-    }
 }
 
-@media screen and (min-width: 360px) and (max-width: 800px) {
-
-    * {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    header {
-    width: 100vw;
+.logo{
+   
+    margin: 1rem 1rem 0;
+    float: left;
 }
 
-.logo {
-    display: none;
-}
-
-.titulo-principal {
-    width: 100vw;
-    font-size: 22px;
-}
-
-.seccion-texto-encriptado {
+.row{
     display: flex;
-    width: 100vw;
-    height: 550px;
-    margin: 0;
-    border-radius: 0px;
-}
-
-.imagen-muñeco {
-    width: 300px;
-    margin: 0;
-}
-
-.seccion-texto-encriptado p {
-    margin-top: 1.5em;
-}
-
-.instruccion {
-    display: none;
-}
-
-.mensaje-usuario {
-    width: 100vw;
-    height: 450px;
-}
-
-.container-texto-usuario {
-    width: 100vw;
-    padding: 0;
-    height: 450px;
-}
-
-.text-here {
-    height: 100%;
-    width: 100%;
-    font-size: 16.5px;
-    margin: 0;
-}
-
-.seccion-botones-encriptado {
-    display: inline-block;
-    width: 100vw;
+    padding: 4em;
 }
 
 .botones {
     display: flex;
-    width: 100vw;
-    margin-top: 1em;
-    justify-content: center;
+}
+
+
+.Desencriptar{
+    background-color: #d8dfe8;
+    padding: 5px 50px;
+    border-radius: 15px;
+    border: #0a3871 solid  2px ;
+    color: #0a3871;
+    font-size: medium;
+    font-weight: 400;
+    height: 50px;
+    margin: 0.5em;
+}
+.Encriptar{
+    background-color: #0a3871;
+    padding: 5px 50px;
+    border-radius: 15px;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    height: 50px;
+    margin: 0.5em;
+}
+
+@media (max-width: 990px) {
+    .row {
+        display: block;
+        padding: 2em; 
+    }
     
+    .col-70 {
+        width: 100%; 
+        padding: 2em; 
+    }
+
+    .col-30 {
+        width: 100%; 
+        padding: 2em; 
+    }
+
+    .logo {
+        width: 10%;
+    }
 }
 
-.encriptar {
-    width: 160px;
-    margin: 0 0.5em;
-}
-
-.desencriptar {
-    width: 160px;
-    margin: 0 0.5em;
-}
-
-.texto-alerta {
-    width: 100vw;
-    margin: 1em 0;
-}
-
-.alerta {
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-}
 
 
 
