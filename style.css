@@ -1,28 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@300;400;500&display=swap');
 
 body{
-    background-color: #f3f5fc;
-    width: 100vw;
-    height: 100vh;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(3, 6, 44);
+    border: 2px solid rgba(7, 2, 106, 0.1);
+    box-shadow: 0 0 80px rgb(19, 33, 125);
 }
 
 
 input{
     border: none;
-    background-color:#f3f5fc ;
-    color: #0a3871;
+    background-color:transparent ;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(109, 121, 228);
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 35%;
+    margin-bottom: 85%;
 
 }
 
-.col-70{
-    
-    width: 75%;
-    padding: 3em;
+container {
+    height: 95vh;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-70{
+    width: 65%;
+    padding: 2em;
+    flex-direction: column;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .col-30{
     display: flex;
@@ -30,26 +42,48 @@ input{
     width: 25%;
     align-items: center;
     justify-content: center;
-    background-color:#fff;
+    background-color: rgb(3, 6, 44);
+    border: 1px solid rgb(19, 33, 125);
+    box-shadow: 0 0 80px rgb(19, 33, 125);
     border-radius: 15px;
     padding: 2em;
     text-align: center;
-    
+    height: 65vh;
+    margin: 0 1em 0 0;
+    gap: 15px;
+
+}
+
+.col-30 img {
+    width: 60%;
 }
 
 .logo{
-   
-    margin: 1rem 1rem 0;
     float: left;
+    border: solid;
+    padding: 5px;
+    background-color: rgb(3, 6, 44);
+    border: 1px solid rgb(19, 33, 125);
+    box-shadow: 0 0 80px rgb(19, 33, 125);
 }
 
 .row{
     display: flex;
-    padding: 4em;
+    align-items: center;
+    color: white;
+}
+
+.advertencia {
+    margin: 1em;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(109, 121, 228);
+    width: 100%;
+    text-align: center;
 }
 
 .botones {
     display: flex;
+    gap: 15px;
 }
 
 
@@ -63,32 +97,65 @@ input{
     font-weight: 400;
     height: 50px;
     margin: 0.5em;
+    background-color: rgb(3, 6, 44);
+    border: 2px solid rgba(7, 2, 106, 0.1);
+    box-shadow: 0 0 80px rgb(19, 33, 125);
+}
+
+.Desencriptar:hover {
+    background-color: rgb(3, 7, 55);
+    border: 2px solid rgba(10, 4, 116, 0.1);
+    box-shadow: 0 0 80px rgb(22, 38, 139);
+    color: white;
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
 }
 .Encriptar{
     background-color: #0a3871;
     padding: 5px 50px;
     border-radius: 15px;
-    color: white;
+    color: #0a3871;
     font-size: medium;
     font-weight: 400;
     height: 50px;
     margin: 0.5em;
+    background-color: rgb(3, 6, 44);
+    border: 2px solid rgba(7, 2, 106, 0.1);
+    box-shadow: 0 0 80px rgb(19, 33, 125);
+    transition: color 0.3s ease;
+}
+
+.Encriptar:hover {
+    background-color: rgb(3, 7, 55);
+    border: 2px solid rgba(10, 4, 116, 0.1);
+    box-shadow: 0 0 80px rgb(22, 38, 139);
+    color: white;
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
 }
 
 @media (max-width: 990px) {
     .row {
-        display: block;
-        padding: 2em; 
+        display: flex;
+        padding: 2em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
-    .col-70 {
-        width: 100%; 
+    .col-70 { 
         padding: 2em; 
     }
 
     .col-30 {
-        width: 100%; 
-        padding: 2em; 
+        width: 80%; 
+        height: auto;
+    }
+
+    .col-30 img {
+        width: 30%;
     }
 
     .logo {

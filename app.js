@@ -41,8 +41,6 @@ function desencriptar (){
     }
 }
 
-    
-
 function encriptarTexto(texto) {
    
     const mapaEncriptacion = {
